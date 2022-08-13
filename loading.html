@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Screen</title>
+    <style>
+      #img {
+        width: 90px;
+        height: 20px;
+        border: 2px black solid;
+        margin-left: 43%;
+        background-image: linear-gradient(gray, lightgray);
+        margin-top: 15%;
+        border-radius: 50px;
+        position: relative;
+        animation: loading 2s infinite;
+      }
+      @keyframes loading {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      body {
+        background-color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div><h1>Loading Screen</h1></div>
+    <div id="img"></div>
+  </body>
+</html>
